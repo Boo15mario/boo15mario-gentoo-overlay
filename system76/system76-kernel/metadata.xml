@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <longdescription>Reserved package directory for a future System76 kernel package built around a Gentoo-style kernel workflow.</longdescription>
+</pkgmetadata>
