@@ -17,13 +17,17 @@ eselect repository add boo15mario-gentoo-overlay git https://github.com/Boo15mar
 emaint sync -r boo15mario-gentoo-overlay
 ```
 
-Use `boo15mario-gentoo-overlay` exactly as shown above so the name you register with `eselect repository` matches the overlay's configured `profiles/repo_name`.
+The first argument to `eselect repository add` is your local alias. The example uses `boo15mario-gentoo-overlay` so the alias matches this overlay's advertised `profiles/repo_name`, which keeps `emaint sync` and other repo-targeted commands simple. If you choose a different alias, use that alias for sync and removal commands instead.
+
+This overlay currently uses `masters = gentoo` in `metadata/layout.conf`, so it expects the main Gentoo tree to be registered under the standard `gentoo` repository name.
 
 ## Remove the overlay
 
 ```bash
 eselect repository remove boo15mario-gentoo-overlay
 ```
+
+If you added the overlay with a different local alias, replace `boo15mario-gentoo-overlay` with that alias when removing it.
 
 ## Overlay layout
 
