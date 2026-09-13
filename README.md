@@ -17,6 +17,8 @@ eselect repository add boo15mario-gentoo-overlay git https://github.com/Boo15mar
 emaint sync -r boo15mario-gentoo-overlay
 ```
 
+Use `boo15mario-gentoo-overlay` exactly as shown above so the name you register with `eselect repository` matches the overlay's configured `profiles/repo_name`.
+
 ## Remove the overlay
 
 ```bash
