@@ -19,7 +19,7 @@ emaint sync -r boo15mario-gentoo-overlay
 
 The first argument to `eselect repository add` is your local alias. The example uses `boo15mario-gentoo-overlay` so the alias matches this overlay's advertised `profiles/repo_name`, which keeps `emaint sync` and other repo-targeted commands simple. If you choose a different alias, use that alias for sync and removal commands instead.
 
-This overlay inherits from the Gentoo repository through `masters = gentoo` in `metadata/layout.conf`, so the local Portage configuration needs the main Gentoo tree to expose the standard `gentoo` repo name.
+This overlay inherits from the Gentoo repository through `masters = gentoo` in `metadata/layout.conf`, so the local Portage configuration needs the main Gentoo tree to expose the standard `gentoo` repo name. Check `eselect repository list` first and make sure your main Gentoo repository is present with the repo name `gentoo` before enabling this overlay.
 
 ## Remove the overlay
 
